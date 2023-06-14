@@ -1,9 +1,9 @@
-/* normalizeArea */
 html {
   /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
   font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 
+/* normalizeArea */
 body,
 ul,
 li,
@@ -72,6 +72,10 @@ label[for] {
   align-items: center;
 }
 
+.flex-as-c {
+  align-self: center;
+}
+
 .flex-grow-1 {
   flex-grow: 1;
 }
@@ -91,9 +95,22 @@ label[for] {
 
 /* cos */
 .con {
-    width: 1080px;
+  width: 1080px;
 }
 
 .con-min-width {
-    min-width: 1080px;
+  min-width: 1080px;
+}
+
+/* top-bar */
+.top-bar {
+  height: 100px;
+  background-color: green;
+}
+
+.top-bar .btn-go-submit {
+  background-color: #fede22;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 25px;
 }
