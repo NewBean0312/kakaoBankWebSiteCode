@@ -104,8 +104,8 @@ label[for] {
 
 /* 임시 */
 body {
-  background-color: #afafaf;
   height: 10000px;
+  background-color: #afafaf;
 }
 
 /* top-bar */
@@ -115,15 +115,20 @@ body {
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: white;
   border-bottom: 1px solid black;
+  background-color: white;
   /* 실제 border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.top-bar .logo {
+  padding: 0 20px;
 }
 
 /* top-bar - 메뉴박스 1 */
 .top-bar .menu-box-1 > ul > li > a {
-  padding: 0 30px;
   position: relative;
+  padding: 0 30px;
+  font-weight: bold;
 }
 
 .top-bar .menu-box-1 > ul > li:hover > a {
@@ -131,50 +136,56 @@ body {
 }
 
 .top-bar .menu-box-1 > ul > li > a::after {
-  content: "";
-  background-color: black;
   position: absolute;
-  display: none;
-  bottom: 0;
   left: 0;
-  width: 100%;
+  bottom: 0;
+  width: 0;
   height: 2px;
+  background-color: black;
+  content: "";
 }
 
 .top-bar .menu-box-1 > ul > li:hover > a::after {
-  display: block;
-}
-
-/* top-bar 서류제출 버튼 */
-.top-bar .btn-go-submit {
-  background-color: #fede22;
-  padding: 15px;
-  font-weight: 400;
-  border-radius: 25px;
+  width: 100%;
 }
 
 /* top-bar - 메뉴박스 2 */
 .top-bar .menu-box-1 > ul > li > div {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
   width: 100%;
   height: 200px;
-  left: 0;
-  background-color: green;
-  position: absolute;
-  display: none;
-}
-
-.top-bar .menu-box-1 > ul > li:nth-child(2) > div {
-  background-color: gold;
-}
-
-.top-bar .menu-box-1 > ul > li:nth-child(3) > div {
-  background-color: pink;
-}
-
-.top-bar .menu-box-1 > ul > li:nth-child(4) > div {
-  background-color: skyblue;
+  background-color: white;
 }
 
 .top-bar .menu-box-1 > ul > li:hover > div {
   display: block;
+}
+
+.top-bar .menu-box-1 > ul > li > div > div > ul > li {
+  width: 20%;
+}
+
+.top-bar .menu-box-1 > ul > li:first-child > div > div > ul > li {
+  width: 25%;
+}
+
+.top-bar .menu-box-1 > ul > li > div > div > ul > li > a {
+  text-align: center;
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+.top-bar .menu-box-1 > ul > li > div > div > ul > li:hover > a {
+  text-decoration: underline;
+}
+
+/* top-bar 서류제출 버튼 */
+.top-bar .btn-go-submit {
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #fede22;
+  font-weight: 400;
 }
