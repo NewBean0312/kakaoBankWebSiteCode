@@ -3,7 +3,7 @@ html {
   font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 
-/* normalizeArea */
+/* 노말라이즈 */
 body,
 ul,
 li,
@@ -102,22 +102,27 @@ label[for] {
   min-width: 1080px;
 }
 
-/* 임시 */
 body {
   height: 10000px;
-  background-color: #afafaf;
+  background-color: #ffe09c;
 }
 
-/* top-bar */
+/* 드래그 했을 때, CSS 속성 설정 */
+::selection {
+  background-color: #fede22;
+}
+
+/* top-bar 시작 */
 .top-bar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
   height: 100px;
-  border-bottom: 1px solid black;
   background-color: white;
-  /* 실제 border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  /*   실제
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .top-bar .logo {
@@ -125,39 +130,45 @@ body {
 }
 
 /* top-bar - 메뉴박스 1 */
-.top-bar .menu-box-1 > ul > li > a {
-  position: relative;
-  padding: 0 30px;
-  font-weight: bold;
+.top-bar .menu-box-1 {
+  margin-right: 30px;
 }
 
-.top-bar .menu-box-1 > ul > li:hover > a {
+.top-bar .menu-box-1 > ul > li > a {
+  font-weight: bold;
+  padding: 0 20px;
+  position: relative;
+}
+
+.top-bar .menu-box-1 ul > li > a:hover {
   text-decoration: underline;
 }
 
 .top-bar .menu-box-1 > ul > li > a::after {
+  content: "";
+  background-color: black;
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 0;
   height: 2px;
-  background-color: black;
-  content: "";
+  transition: width 0.3s;
 }
 
 .top-bar .menu-box-1 > ul > li:hover > a::after {
   width: 100%;
 }
 
-/* top-bar - 메뉴박스 2 */
+/* top-bar - 메뉴박스 1 - 2차 메뉴 */
 .top-bar .menu-box-1 > ul > li > div {
-  display: none;
-  position: absolute;
-  top: calc(100% + 1px);
   left: 0;
   width: 100%;
-  height: 200px;
   background-color: white;
+  position: absolute;
+  display: none;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  top: calc(100% + 1px);
 }
 
 .top-bar .menu-box-1 > ul > li:hover > div {
@@ -178,14 +189,26 @@ body {
   font-weight: bold;
 }
 
-.top-bar .menu-box-1 > ul > li > div > div > ul > li:hover > a {
-  text-decoration: underline;
+/* top-bar - 메뉴박스 1 - 3차 메뉴  */
+.top-bar .menu-box-1 > ul > li > div > div > ul > li > ul > li > a {
+  padding: 10px 0;
+  text-align: center;
 }
 
-/* top-bar 서류제출 버튼 */
+/* top-bar - 서류제출 버튼 */
 .top-bar .btn-go-submit {
-  padding: 15px;
-  border-radius: 25px;
   background-color: #fede22;
-  font-weight: 400;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+/* top-bar - 언어변경 버튼 */
+.top-bar .global-logo {
+  padding: 0 20px;
+  cursor: default;
+}
+
+.top-bar .global-logo:hover > img {
+  opacity: 0.3;
 }
