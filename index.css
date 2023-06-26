@@ -114,15 +114,15 @@ body {
 
 /* top-bar 시작 */
 .top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100px;
-  background-color: white;
+  width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   /*   실제
      border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
+  background-color: white;
 }
 
 .top-bar .logo {
@@ -135,9 +135,9 @@ body {
 }
 
 .top-bar .menu-box-1 > ul > li > a {
-  font-weight: bold;
-  padding: 0 20px;
   position: relative;
+  padding: 0 20px;
+  font-weight: bold;
 }
 
 .top-bar .menu-box-1 ul > li > a:hover {
@@ -145,14 +145,14 @@ body {
 }
 
 .top-bar .menu-box-1 > ul > li > a::after {
-  content: "";
-  background-color: black;
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: -1px;
   width: 0;
-  height: 2px;
+  height: 1px;
+  border-top: 2px solid black;
   transition: width 0.3s;
+  content: "";
 }
 
 .top-bar .menu-box-1 > ul > li:hover > a::after {
@@ -161,14 +161,14 @@ body {
 
 /* top-bar - 메뉴박스 1 - 2차 메뉴 */
 .top-bar .menu-box-1 > ul > li > div {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1px);
   left: 0;
   width: 100%;
-  background-color: white;
-  position: absolute;
-  display: none;
   padding-top: 30px;
   padding-bottom: 40px;
-  top: calc(100% + 1px);
+  background-color: white;
 }
 
 .top-bar .menu-box-1 > ul > li:hover > div {
