@@ -111,7 +111,7 @@ label[for] {
   background-color: #fede22;
 }
 
-/* top-banner-box-1 */
+
 /* .top-banner-box-1 {
   position: relative;
   margin-top: 500px;
@@ -127,6 +127,23 @@ label[for] {
   background-color: #ffef6b;
 } */
 
+/* cos lib */
+.ico {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_220615.png);
+}
+
+.ico-1 {
+  background-position: -341px -292px;
+}
+
+.ico-2 {
+  background-position: -371px -292px;
+}
+/* top-banner-box-1 */
 .top-banner-box-1 {
   padding: 100px;
   background-color: #ffef6b;
@@ -152,13 +169,23 @@ label[for] {
 }
 
 .top-banner-box-1 .txt-box > .btns > li > a {
-  display: block;
+  display: flex;
   width: 178px;
+  height: 50px;
   border-radius: 12px;
   background-color: white;
   color: #333;
   font-size: 16.2px;
   font-weight: bold;
-  line-height: 56px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+
+.top-banner-box-1 .txt-box > .btns > li > a > .ico {
+  margin-right: 10px;
+}
+
+.top-banner-box-1 .txt-box > .btns > li:hover > a {
+  text-decoration: underline;
+}
+
