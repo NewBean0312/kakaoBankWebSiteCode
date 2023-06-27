@@ -119,20 +119,55 @@ label[for] {
 .top-banner-box-type-1 {
   display: flex;
   min-height: 500px;
-  border: 10px solid green;
 }
 
 .top-banner-box-type-1 > div:first-child {
   width: 55%;
-  background-color: red;
 }
 
 .top-banner-box-type-1 > div:last-child {
+  display: flex;
   flex-grow: 1;
-  background-color: blue;
+  align-items: center;
 }
 
 .top-banner-box-type-1-between-pad {
   height: 32px;
   background-color: #fafafa;
+}
+
+/* top-banner-box-2 */
+.top-banner-box-2 .img-box {
+  width: 473px;
+}
+
+.top-banner-box-2 .txt-box > h1 {
+  font-size: 40px;
+  line-height: 1.35;
+}
+
+.top-banner-box-2 .txt-box > .des {
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #666;
+}
+
+.top-banner-box-2 .txt-box > .btn-box {
+  display: flex;
+  margin-top: 40px;
+}
+
+.top-banner-box-2 .txt-box > .btn-box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 258px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  color: #333;
+  font-size: 16px;
+  line-height: 56px;
 }
