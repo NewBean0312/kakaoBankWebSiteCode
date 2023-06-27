@@ -201,3 +201,23 @@ label[for] {
 .top-banner-box-3 .img-box {
   width: 409px;
 }
+
+/* top-banner-box-4 */
+.top-banner-box-4 .img-box {
+  width: 459px;
+}
+
+/* top-banner-box-5 */
+.top-banner-box-5 .img-box {
+  width: 492px;
+}
+
+/* top-banner-box-6 */
+.top-banner-box-6-wrap {
+  height: 750px;
+  background: #fff url(https://www.kakaobank.com/static/images/web/home_map.png) no-repeat -12% 50%;
+}
+
+.top-banner-box-6 .img-box {
+  width: 408px;
+}
