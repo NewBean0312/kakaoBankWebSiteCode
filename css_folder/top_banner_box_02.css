@@ -190,7 +190,24 @@ label[for] {
   width: 473px;
 }
 
+/* top-banner-box-2 */
+.top-banner-box-2 > div:first-child > * {
+  margin-left: 35px;
+}
+
+.top-banner-box-2 > div:last-child > * {
+  margin-left: -5px;
+}
+
 /* top-banner-box-3 */
+.top-banner-box-3 > div:first-child > * {
+  margin-left: 70px;
+}
+
+.top-banner-box-3 > div:last-child > * {
+  margin-left: 66px;
+}
+
 .top-banner-box-3 .txt-box > .img-box-1 {
   margin-top: 65px;
 }
@@ -203,19 +220,44 @@ label[for] {
 }
 
 /* top-banner-box-4 */
+.top-banner-box-4 > div:first-child > * {
+  margin-left: 57px;
+}
+
+.top-banner-box-4 > div:last-child > * {
+  margin-left: 35px;
+}
+
 .top-banner-box-4 .img-box {
   width: 459px;
 }
 
 /* top-banner-box-5 */
+.top-banner-box-5 > div:first-child > * {
+  margin-left: 130px;
+}
+
+.top-banner-box-5 > div:last-child > * {
+  margin-left: -15px;
+}
+
 .top-banner-box-5 .img-box {
   width: 492px;
 }
 
 /* top-banner-box-6 */
+.top-banner-box-3 > div:first-child > * {
+  margin-left: 76px;
+}
+
+.top-banner-box-3 > div:last-child > * {
+  margin-left: 35px;
+}
+
 .top-banner-box-6-wrap {
   height: 750px;
-  background: #fff url(https://www.kakaobank.com/static/images/web/home_map.png) no-repeat -12% 50%;
+  background: #fff url(https://www.kakaobank.com/static/images/web/home_map.png)
+    no-repeat -12% 50%;
 }
 
 .top-banner-box-6 .img-box {
