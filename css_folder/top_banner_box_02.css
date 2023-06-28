@@ -103,6 +103,9 @@ label[for] {
 }
 
 /* cos */
+.overflow-hidden {
+  overflow: hidden;
+}
 .con {
   width: 1080px;
 }
@@ -221,7 +224,7 @@ label[for] {
 }
 
 .top-banner-box-3 .img-box > img {
-  transition: transform 1s, opacity 1s;
+  transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1), opacity 1s;
   transform: translateX(100%);
   opacity: 0;
 }
@@ -277,7 +280,7 @@ label[for] {
 }
 
 .top-banner-box-6 .img-box > img {
-  transition: transform 1s, opacity 1s;
+  transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1), opacity 1s;
   transform: translateY(100%);
   opacity: 0;
 }
