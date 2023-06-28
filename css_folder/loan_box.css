@@ -123,10 +123,10 @@ label[for] {
   position: relative;
   z-index: 1;
   /* 임시 */
+  margin-top: 1000px;
   height: 500px;
   background-color: #333b58;
 }
-
 
 .loan-box > .sky {
   position: absolute;
@@ -147,6 +147,6 @@ label[for] {
   transition: height 0.5s;
 }
 
-.loan-box:hover > .sky > .blue {
+.loan-box.active > .sky > .blue {
   height: 0;
 }
