@@ -124,7 +124,7 @@ label[for] {
   z-index: 1;
   /* 임시 */
   height: 500px;
-  margin-top: 1000px;
+  margin-top: 1500px;
   background-color: #333b58;
   color: white;
 }
@@ -193,3 +193,90 @@ label[for] {
     top: -23px;
     left: -23px;
 }
+
+/* loan-box - stars */
+.loan-box > .sky .ico-star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .loan-box > .sky .ico-star-1 {
+    top: 30%;
+    left: 10%;
+  }
+  
+  .loan-box > .sky .ico-star-2 {
+    top: 10%;
+    left: 20%;
+  }
+  
+  .loan-box > .sky .ico-star-3 {
+    top: 25%;
+    left: 15%;
+  }
+  
+  .loan-box > .sky .ico-star-4 {
+    top: 40%;
+    right: 15%;
+  }
+  
+  .loan-box > .sky .ico-star-5 {
+    top: 43%;
+    right: 30%;
+  }
+  
+  .loan-box > .sky .ico-star-6 {
+    top: 73%;
+    right: 27%;
+  }
+  
+  .loan-box > .sky .ico-star-7 {
+    top: 65%;
+    left: 22%;
+  }
+  
+  @keyframes clittering {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  
+  .loan-box > .sky .ico-star-1 {
+    animation: clittering 2s infinite;
+  }
+  
+  .loan-box > .sky .ico-star-2 {
+    animation: clittering 3s infinite;
+  }
+  
+  .loan-box > .sky .ico-star-3 {
+    animation: clittering 5s infinite;
+  }
+  
+  .loan-box > .sky .ico-star-4 {
+    animation: clittering 2s infinite;
+  }
+  
+  .loan-box > .sky .ico-star-5 {
+    animation: clittering 4s infinite;
+  }
+  
+  .loan-box > .sky .ico-star-6 {
+    animation: clittering 1.8s infinite;
+  }
+  
+  .loan-box > .sky .ico-star-7 {
+    animation: clittering 3.5s infinite;
+  }
