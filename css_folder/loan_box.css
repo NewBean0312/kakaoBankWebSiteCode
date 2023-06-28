@@ -123,16 +123,21 @@ label[for] {
   position: relative;
   z-index: 1;
   /* 임시 */
-  margin-top: 1000px;
   height: 500px;
+  margin-top: 1000px;
   background-color: #333b58;
+  color: white;
+}
+
+.loan-box > .con {
+    position: relative;
+    z-index: 1;
 }
 
 .loan-box > .sky {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   width: 100%;
   height: 100%;
 }
@@ -149,4 +154,42 @@ label[for] {
 
 .loan-box.active > .sky > .blue {
   height: 0;
+}
+
+.loan-box > .sky > .moon {
+    position: absolute;
+    top: 100px;
+    left: calc(50% + 400px);
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+}
+
+.loan-box > .sky > .moon > .base {
+    width: 110px;
+    height: 110px;
+    background-color: #ffdc00;
+    border-radius: 50%;
+    transition: background-color 1s;
+    
+}
+
+.loan-box.active > .sky > .moon > .base {
+    background-color: white;
+}
+
+.loan-box > .sky > .moon > .shadow{
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333b58;
+    transition: top .5s .2s, left .5s .2s;
+}
+
+.loan-box.active > .sky > .moon > .shadow{
+    top: -23px;
+    left: -23px;
 }
