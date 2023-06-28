@@ -276,6 +276,14 @@ label[for] {
   width: 408px;
 }
 
-.top-banner-box-6 .img-box.active {
-  background-color: red;
+.top-banner-box-6 .img-box > img {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
 }
+
+.top-banner-box-6 .img-box.active > img {
+  transform: translateY(0);
+  opacity: 1;
+}
+
