@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS 불러오기 -->
     <link rel="stylesheet" href="../css_folder/top_banner_box_02.css" />
     <!-- 구글 폰트 불러오기 -->
     <!-- rotobo(400/700/900), notosanskr(400/600/900) -->
@@ -15,8 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
     <!-- 제이쿼리 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js_folder/jQuery.js"></script>
     <title>KakaoBank</title>
   </head>
   <body>
@@ -65,7 +68,10 @@
         </div>
       </div>
       <div>
-        <div class="img-box">
+        <div
+          class="img-box active-on-visible"
+          data-active-on-visible-diff-y="-200"
+        >
           <img
             src="https://www.kakaobank.com/static/images/web/renewal/main-savings.png"
             alt=""
@@ -130,7 +136,7 @@
     <div class="top-banner-box-6-wrap con-min-width">
       <div class="top-banner-box-6 top-banner-box-type-1 con">
         <div>
-          <div class="img-box">
+          <div class="img-box active-on-visible">
             <img
               src="https://www.kakaobank.com/static/images/web/renewal/main-foreignRemittance-new.png"
               alt=""
