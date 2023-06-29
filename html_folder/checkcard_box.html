@@ -19,7 +19,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
     <!-- 제이쿼리 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../js_folder/jQuery.js"></script>
+    <!-- 슬릭 슬라이더 불러오기 -->
+    <script src="../js_folder/slider.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
+    />
     <title>KakaoBank</title>
   </head>
   <body>
@@ -38,37 +53,59 @@
         </div>
         <div class="slider-box-1">
           <div class="arrows">
-            <div>
+            <div class="btn-arrow btn-arrow-left">
               <img
                 src="https://www.kakaobank.com/static/images/web/img-left.png"
                 alt=""
               />
             </div>
-            <div>
+            <div class="btn-arrow btn-arrow-right">
               <img
                 src="https://www.kakaobank.com/static/images/web/img-right.png"
                 alt=""
               />
             </div>
           </div>
-          <div class="slider">
-            <div>
-              <img
-                src="https://www.kakaobank.com/static/images/web/renewal/card-2.png"
-                alt=""
-              />
+          <div class="slick">
+            <div class="item">
+              <div class="img-box">
+                <img
+                  src="https://www.kakaobank.com/static/images/web/renewal/card-1.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="center">
-              <img
-                src="https://www.kakaobank.com/static/images/web/renewal/card-3.png"
-                alt=""
-              />
+            <div class="item">
+              <div class="img-box">
+                <img
+                  src="https://www.kakaobank.com/static/images/web/renewal/card-2.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <div>
-              <img
-                src="https://www.kakaobank.com/static/images/web/renewal/card-4.png"
-                alt=""
-              />
+            <div class="item">
+              <div class="img-box">
+                <img
+                  src="https://www.kakaobank.com/static/images/web/renewal/card-3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-box">
+                <img
+                  src="https://www.kakaobank.com/static/images/web/renewal/card-4.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-box">
+                <img
+                  src="https://www.kakaobank.com/static/images/web/renewal/card-5.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
