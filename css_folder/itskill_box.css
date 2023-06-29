@@ -1,0 +1,180 @@
+html {
+  /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+/* normalize */
+body,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+label[for] {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* lib */
+.border-red {
+  border: 4px solid red;
+}
+
+.border-pink {
+  border: 4px solid pink;
+}
+
+.border-blue {
+  border: 4px solid blue;
+}
+
+.border-green {
+  border: 4px solid green;
+}
+
+.border-black {
+  border: 4px solid black;
+}
+
+.border-gold {
+  border: 4px solid gold;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-e {
+  justify-content: flex-end;
+}
+
+.flex-jc-s {
+  justify-content: flex-start;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-as-c {
+  align-self: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.height-100p {
+  height: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-box > img {
+  display: block;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.txt-al-c {
+  text-align: center;
+}
+
+/* cos */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.con {
+  width: 1080px;
+}
+
+.con-min-width {
+  min-width: 1080px;
+}
+
+::selection {
+  background-color: #fede22;
+}
+
+/* itskill-box */
+.itskill-box {
+    padding-top: 160px;
+}
+
+.itskill-box > .con > h1 {
+    color: #111;
+    font-size: 40px;
+    line-height: 1.35;
+}
+
+.itskill-box > .con > .divider {
+    width: 100px;
+    height: 2px;
+    margin: 50px auto 140px auto;
+    background-color: black;
+}
+
+.itskill-box > .con > .info-box {
+    margin: 50px 30px auto 30px;
+}
+
+.itskill-box > .con > .info-box::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    transform: translateY(122px);
+    z-index: -1;
+    content: "";
+}
+
+.itskill-box > .con > .info-box > ul > li{
+    width: 269px;
+}
+
+.itskill-box > .con > .info-box > ul > li:nth-child(2){
+    margin-left: -26px;
+}
+
+.itskill-box > .con > .info-box > ul > li > h1{
+    margin-top: 45px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.itskill-box > .con > .info-box > ul > li > .des{
+    margin-top: 17px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+}
