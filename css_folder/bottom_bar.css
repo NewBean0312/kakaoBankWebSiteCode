@@ -80,6 +80,10 @@ label[for] {
   flex-grow: 1;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .height-100p {
   height: 100%;
 }
@@ -133,35 +137,38 @@ label[for] {
 
 /* bottom-bar */
 .bottom-bar {
-  padding: 20px 0 16px;
-  background-color: #eee;
   font-size: 11px;
-  font-family: "돋움", dotum, sans-serif;
+  font-family: '돋움',dotum,sans-serif;
+  background-color: #eee;
+  padding: 20px 0 16px;
 }
 
 .bottom-bar .box-1 {
   color: #666;
 }
-
 .bottom-bar .box-1 > .menu-box-1 > ul > li {
-  display: inline-block;
-  padding: 0 10px;
-  margin-bottom: 10px;
-}
-
-.bottom-bar .box-1 > .menu-box-1 > ul > li.not {
-  padding-left: 0;
-  padding-right: 10px;
+  margin-top: 10px;
 }
 
 .bottom-bar .box-1 > .menu-box-1 > ul > li:hover > a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+.bottom-bar .box-1 > .menu-box-1 > ul > li > span {
+  float: left;
+  width: 1px;
+  height: 10px;
+  margin: 0 15px;
+  background-color: #d8d8d8;
+}
 
 .bottom-bar .box-2 {
-  margin-top: 10px;
   color: #888;
+  margin-top: 10px;
+}
+
+.bottom-bar .box-2 > a {
+  font-size: 12px;
 }
 
 .bottom-bar .box-2 > .rep-contact {
@@ -169,5 +176,71 @@ label[for] {
 }
 
 .bottom-bar .box-2 > .copyright {
-  margin-top: 8px;
+  margin-top: 10px;
+}
+
+.bottom-bar .box-3 {
+  margin-top: 15px;
+}
+
+.bottom-bar .box-3 > a > span {
+  margin-left: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.bottom-bar .box-3 > a:hover {
+  text-decoration: underline;
+}
+
+.bottom-bar .box-3 > .auth-mark-1 {
+  margin-right: 20px;
+}
+
+.bottom-bar .box-3 > .auth-mark-1 > img {
+  width: 48px;
+}
+
+.bottom-bar .box-3 > .auth-mark-2 > img {
+  width: 42px;
+}
+
+.bottom-bar .box-3 > .menu-box-2 > ul {
+  margin-right: 45px;
+}
+
+.bottom-bar .box-3 > .menu-box-2 > ul > li {
+  margin-left: 10px;
+  
+}
+
+.bottom-bar .box-3 > .menu-box-2 > ul > li > a {
+  width: 24px;
+  height: 24px;
+}
+
+.bottom-bar .box-3 > .menu-box-2 > ul > li > a > span {
+  height: 100%;
+  
+}
+
+.ico-2 {
+  background-image: url(https://www.kakaobank.com/static/images/web/ico_sns.png);
+}
+
+.ico-2.ico-2-facebook {
+  background-position: 0 -90px;
+}
+
+.ico-2.ico-2-instagram {
+  background-position: -191px -138px;
+}
+
+.ico-2.ico-2-youtube {
+  background-position: -90px -90px;
+}
+
+.ico-2.ico-2-brunch {
+  background-position: -217px -138px;
 }
