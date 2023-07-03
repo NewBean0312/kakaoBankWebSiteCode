@@ -157,3 +157,17 @@ label[for] {
 .bottom-bar .box-1 > .menu-box-1 > ul > li:hover > a {
     text-decoration: underline;
 }
+
+
+.bottom-bar .box-2 {
+  margin-top: 10px;
+  color: #888;
+}
+
+.bottom-bar .box-2 > .rep-contact {
+  margin: 0 10px;
+}
+
+.bottom-bar .box-2 > .copyright {
+  margin-top: 8px;
+}
